@@ -13,12 +13,135 @@
     <title>Wildlife</title>
   </head>
   <body>
-    <header>
-      <!--<img src="./assets/images/logo.svg">
-        <img src="./assets/images/wildlife.png">
+    <header class="header" style="background-color: black">
+      <div class="hero">
+        <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+        <h1>wildlife</h1>
+      </div>
+      <nav class="header-nav">
+        <ul class="links">
+          <li class="link-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="link-item">
+            <a href="#" class="nav-link">Contacts</a>
+          </li>
+          <li class="link-item">
+            <img src="./assets/images/loop.png" alt="search" />
+          </li>
+          <li class="link-item">
+            <button class="signin-button">Sign in</button>
+          </li>
+        </ul>
+      </nav>
+      <!--
+       
         <p>What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.</p>-->
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+      <section class="survival">
+        <h2>Survival</h2>
+        <article class="survival-content">
+          What this means is that we exist to help protect our environment and
+          do in numbers of ways. You can save the planet by donation.
+        </article>
+        <buton class="donate">Donate</buton>
+      </section>
+      <section class="last-articles">
+        <h2>Latest articles</h2>
+        <article class="last-aricle-content">
+          Breaking news from the wild
+        </article>
+        <div class="slides">
+          <button class="arrows">
+            <img
+              src="./assets/images/left.svg"
+              alt="left-arrow"
+              class="arrow"
+            />
+          </button>
+
+          <ul class="pseudo-slides">
+            <li class="slide">
+              <h4>Deer</h4>
+              <p class="slide-text">Naturalist investigation</p>
+              <img src="./assets/images/deer.jpg" alt="deer" class="photo" />
+            </li>
+
+            <li class="slide">
+              <h4>Squirrel</h4>
+              <p class="slide-text">Kamikaze squirrels</p>
+              <img
+                src="./assets/images/squirrel.jpg"
+                alt="deer"
+                class="photo"
+              />
+            </li>
+            <li class="slide">
+              <h4>Bird</h4>
+              <p class="slide-text">Birds Fight club</p>
+              <img src="./assets/images/bird.jpg" alt="deer" class="photo" />
+            </li>
+          </ul>
+          <button class="arrows">
+            <img
+              src="./assets/images/rightsvg.svg"
+              alt="right-arrow"
+              class="arrow"
+            />
+          </button>
+        </div>
+      </section>
+      <section class="get-notified">
+        <h3>Get notified about new amazing articles</h3>
+        <form action="/signup" method="POST">
+          <input type="text" name="email" id="email" placeholder="Email" />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="hero">
+        <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+        <img src="./assets/images/wildlife.png" />
+      </div>
+      <nav class="footer-navigation">
+        <ul class="links">
+          <li class="link-item">
+            <a href="#" class="nav-link">Articles</a>
+          </li>
+          <li class="link-item">
+            <a href="#" class="nav-link">About us</a>
+          </li>
+          <li class="link-item">
+            <a href="#" class="nav-link">Learn more</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="socials">
+        <ul class="social-links">
+          <li class="link-item">
+            <a href="#" class="nav-link"
+              ><img src="./assets/images/fb.png" alt="facebook"
+            /></a>
+          </li>
+          <li class="link-item">
+            <a href="#" class="nav-link"
+              ><img src="./assets/images/ig.png" alt="instagram"
+            /></a>
+          </li>
+          <li class="link-item">
+            <a href="#" class="nav-link"
+              ><img src="./assets/images/pin.png" alt="pin"
+            /></a>
+          </li>
+          <li class="link-item">
+            <a href="#" class="nav-link"
+              ><img src="./assets/images/telega.png" alt="telegram"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>

@@ -1,7 +1,14 @@
 :root {
     --header-footer-background: #02160b;
-    --text-color: #F7F7F7;
+    --text-main-color: #F7F7F7;
     --button-color: #CD6326;
     --button-hover: #E39128;
-    --button-pressed: #8F5613;
+    --button-active: #8F5613;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    color: var(--text-main-color);
+    text-transform: uppercase;
 }

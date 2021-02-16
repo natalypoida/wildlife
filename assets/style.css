@@ -6,6 +6,7 @@
     --button-active: #8F5613;
 }
 body{
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
 }
 h1 {

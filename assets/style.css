@@ -1,15 +1,97 @@
 :root {
-    --header-footer-background: #02160b;
-    --text-main-color: #F7F7F7;
-    --button-color: #CD6326;
-    --button-hover: #E39128;
-    --button-active: #8F5613;
+  --header-survival-background: #02160b;
+  --slider-background: #ccc;
+  --footer-background: #181617;
+  --text-main-color: #f7f7f7;
+  --font-gray: #666;
+  --font-dark: #333;
+  --button-color: #cd6326;
+  --button-hover: #e39128;
+  --button-active: #8f5613;
+  font-size: 62.5%;
 }
-body{
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-size: 1.8rem;
+}
+
 h1 {
-    color: var(--text-main-color);
-    text-transform: uppercase;
+  color: var(--text-main-color);
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  vertical-align: 2rem;
+}
+
+.header-wrapper {
+  position: absolute;
+  top: 0.3rem;
+  /* background-color: var(--header-survival-background);*/
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-right: 1.9rem;
+}
+
+.hero {
+  flex-basis: 23rem;
+  padding-top: 0.8rem;
+}
+
+.header-navigation {
+  padding-top: 0.6rem;
+  flex-basis: 39rem;
+  flex-grow: 0.155;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  font-size: 2.3rem;
+}
+.link-item > a {
+  color: var(--text-main-color);
+  text-decoration: none;
+}
+
+.link-item > img {
+  padding-top: 1rem;
+}
+.survival {
+  max-height: 779px;
+  background-color: var(--header-survival-background);
+}
+.survival-content {
+  position: relative;
+  max-width: 144rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image {
+  max-width: 144rem;
+}
+.hero-image > img {
+  width: 100%;
 }

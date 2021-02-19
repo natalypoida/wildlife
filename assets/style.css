@@ -29,7 +29,7 @@ h1 {
   vertical-align: 2rem;
 }
 
-.header-wrapper {
+header {
   position: absolute;
   top: 0.3rem;
   width: 100vw;
@@ -91,14 +91,8 @@ button {
   padding: 1rem 2.5rem;
 }
 .survival {
-  max-height: 779px;
+  max-height: 77.9rem;
   background-color: var(--header-survival-background);
-}
-.survival-content {
-  position: relative;
-  max-width: 144rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-image {
@@ -110,8 +104,8 @@ button {
 
 .survival-text {
   position: absolute;
-  top: 25.6%;
-  left: 8.2%;
+  top: 22%;
+  left: 8.3%;
 }
 
 .survival-title {
@@ -119,4 +113,29 @@ button {
   font-size: 4.8rem;
   line-height: 7.2rem;
   letter-spacing: 0.2rem;
+}
+.survival-text > p {
+  width: 27.4rem;
+  margin-top: 5rem;
+  margin-bottom: 6.6rem;
+}
+.survival-content {
+  color: var(--text-main-color);
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-style: normal;
+  font-weight: normal;
+}
+.donate {
+  background-color: var(--button-color);
+  border-radius: 0.5rem;
+  width: 16rem;
+  height: 6rem;
+  text-align: center;
+  padding: 1.6rem 4.4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.3rem;
+  font-style: normal;
+  line-height: 2.7rem;
+  font-weight: normal;
 }

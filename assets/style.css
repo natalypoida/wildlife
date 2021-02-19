@@ -107,10 +107,12 @@ button {
   top: 22%;
   left: 8.3%;
 }
-
+h2 {
+  font-size: 4.8rem;
+}
 .survival-title {
   color: var(--button-color);
-  font-size: 4.8rem;
+  /*font-size: 4.8rem;*/
   line-height: 7.2rem;
   letter-spacing: 0.2rem;
 }
@@ -138,4 +140,29 @@ button {
   font-style: normal;
   line-height: 2.7rem;
   font-weight: normal;
+}
+.latest-articles-slider {
+  background-color: var(--slider-background);
+}
+
+.latest-articles-slider-content {
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12.5rem;
+  /* padding-bottom: 24rem;*/
+  text-align: center;
+}
+
+.last-articles-title {
+  color: var(--font-dark);
+  font-style: normal;
+  padding-right: 1.8rem;
+}
+.last-article-content {
+  font-size: 2.4rem;
+  font-style: normal;
+  color: var(--font-gray);
+  padding-top: 2.3rem;
+  padding-right: 1.8rem;
 }

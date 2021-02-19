@@ -29,6 +29,13 @@ h1 {
   vertical-align: 2rem;
 }
 
+h4 {
+  color: var(--text-main-color);
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
 header {
   position: absolute;
   top: 0.3rem;
@@ -150,19 +157,53 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   padding-top: 12.5rem;
-  /* padding-bottom: 24rem;*/
   text-align: center;
 }
 
 .last-articles-title {
   color: var(--font-dark);
   font-style: normal;
-  padding-right: 1.8rem;
 }
 .last-article-content {
   font-size: 2.4rem;
   font-style: normal;
   color: var(--font-gray);
   padding-top: 2.3rem;
-  padding-right: 1.8rem;
+}
+
+.slides {
+  display: flex;
+  justify-content: space-between;
+  width: 120rem;
+  margin-top: 12.4rem;
+}
+.slide {
+  padding-top: 0.2rem;
+  width: 30rem;
+  height: 36rem;
+}
+.slide-deer {
+  background-image: url("./images/deer.jpg");
+}
+.slide-squirrel {
+  background-image: url("./images/squirrel.jpg");
+}
+.slide-bird {
+  background-image: url("./images/bird.jpg");
+}
+.slide-title {
+  padding-top: 24.7rem;
+}
+
+.slide-text {
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+  color: var(--text-main-color);
+}
+.arrow {
+  width: 3rem;
+  height: 7rem;
+}
+.arrows {
+  align-self: center;
 }

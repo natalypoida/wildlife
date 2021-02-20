@@ -213,6 +213,7 @@ h2 {
 .get-notified {
   text-align: center;
   margin-top: 24rem;
+  padding-bottom: 24rem;
 }
 
 .get-notified-title {
@@ -254,4 +255,27 @@ h2 {
   background: var(--button-color);
   border: 0.1rem solid var(--button-color);
   border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.footer {
+  background-color: var(--footer-background);
+  width: 100vw;
+  position: relative;
+}
+.footer-wrapper {
+  background-image: url("./images/footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 144rem;
+  height: 35.9rem;
+}
+
+.footer-content {
+  width: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }

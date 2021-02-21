@@ -18,15 +18,21 @@
   padding: 0;
 }
 
-h1 {
+.hero {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logo {
+  margin-right: 1.4rem;
+}
+.logo-title {
   color: var(--text-main-color);
   text-transform: uppercase;
   font-size: 3.2rem;
-  display: inline-block;
-  margin-left: 12px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  vertical-align: 2rem;
+  line-height: 6rem;
 }
 
 h4 {
@@ -53,10 +59,6 @@ header {
   margin-right: auto;
   padding-top: 1rem;
   padding-right: 1.9rem;
-}
-
-.hero {
-  padding-top: 0.8rem;
 }
 
 .sv:hover {
@@ -122,7 +124,6 @@ h2 {
 }
 .survival-title {
   color: var(--button-color);
-  /*font-size: 4.8rem;*/
   line-height: 7.2rem;
   letter-spacing: 0.2rem;
 }
@@ -268,7 +269,6 @@ h2 {
   background-repeat: no-repeat;
   background-position: center center;
   width: 144rem;
-  height: 35.9rem;
 }
 
 .footer-content {
@@ -276,6 +276,34 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15rem 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-links {
+  display: flex;
+  margin-left: 1rem;
+  list-style-type: none;
+  width: 48rem;
+  justify-content: space-between;
+}
+
+.footer-nav-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 23px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+}
+.social-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 24rem;
+}
+
+.social-link-item:not(:last-child) {
+  padding-right: 1.8rem;
 }

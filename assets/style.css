@@ -16,7 +16,56 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  font-style: normal;
+  font-weight: 400;
 }
+
+/* HEADER */
+
+.header-wrapper {
+  position: absolute;
+  top: 0.3rem;
+  margin: 0 calc((100% - 120rem) / 2);
+  width: 144rem;
+  z-index: 1;
+}
+
+.header-content {
+  width: 120rem;
+  padding-top: 1.5rem;
+}
+
+.header-content,
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  width: 55rem;
+  padding-left: 7.4rem;
+  padding-top: 0.5rem;
+}
+.links {
+  list-style-type: none;
+  align-items: center;
+  font-size: 2.3rem;
+}
+
+.nav-link:nth-child(2n) {
+  padding-right: 1rem;
+}
+
+.link-item > a {
+  color: var(--text-main-color);
+  text-decoration: none;
+}
+.link-item > img {
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+/* LOGO IN HEADER AND IN FOOTER*/
 
 .hero {
   display: flex;
@@ -42,50 +91,8 @@ h4 {
   font-weight: 400;
 }
 
-header {
-  position: absolute;
-  top: 0.3rem;
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-}
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  width: 120rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.5rem;
-}
-
 .sv:hover {
   fill: #cd6326;
-}
-.header-navigation {
-  width: 55rem;
-  padding-left: 7.4rem;
-  padding-top: 0.5rem;
-}
-.links {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
-  font-size: 2.3rem;
-}
-
-.nav-link:nth-child(2n) {
-  padding-right: 1rem;
-}
-
-.link-item > a {
-  color: var(--text-main-color);
-  text-decoration: none;
-}
-.link-item > img {
-  padding-top: 1rem;
 }
 
 button {
@@ -100,10 +107,9 @@ button {
   color: var(--text-main-color);
   font-size: 2.3rem;
   font-family: "Roboto", sans-serif;
-  text-align: center;
   border: 0.2rem solid var(--button-color);
+  background-color: transparent;
   border-radius: 0.5rem;
-  padding: 1rem 2.5rem;
 }
 .survival {
   max-height: 77.9rem;
@@ -112,15 +118,18 @@ button {
 
 .hero-image {
   max-width: 144rem;
+  margin: 0 auto;
+  height: 77.9rem;
 }
 .hero-image > img {
   width: 100%;
+  height: 77.8rem;
 }
 
 .survival-text {
   position: absolute;
   top: 22%;
-  left: 8.3%;
+  left: calc((100% - 120rem) / 2);
 }
 h2 {
   font-size: 4.8rem;
@@ -272,6 +281,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: center center;
   width: 144rem;
+  margin: 0 calc((100% - 144rem) / 2);
 }
 
 .footer-content {

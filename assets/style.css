@@ -128,7 +128,7 @@ button {
 
 .survival-text {
   position: absolute;
-  top: 22%;
+  top: 21%;
   left: calc((100% - 120rem) / 2);
 }
 h2 {
@@ -289,14 +289,15 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15rem 0;
+  padding: 14.5rem 0;
   margin-left: auto;
   margin-right: auto;
 }
 
 .footer-links {
   display: flex;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0.4rem;
   list-style-type: none;
   width: 48rem;
   justify-content: space-between;

@@ -57,8 +57,7 @@ header {
   width: 120rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1rem;
-  padding-right: 1.9rem;
+  padding-top: 1.5rem;
 }
 
 .sv:hover {
@@ -66,17 +65,21 @@ header {
 }
 .header-navigation {
   width: 55rem;
-  padding-left: 8.9rem;
-  padding-top: 0.7rem;
+  padding-left: 7.4rem;
+  padding-top: 0.5rem;
 }
 .links {
-  padding-top: 0.5rem;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   align-items: center;
   font-size: 2.3rem;
 }
+
+.nav-link:nth-child(2n) {
+  padding-right: 1rem;
+}
+
 .link-item > a {
   color: var(--text-main-color);
   text-decoration: none;

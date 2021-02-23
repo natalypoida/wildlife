@@ -14,25 +14,25 @@
 * {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  margin: 0;
   padding: 0;
   font-style: normal;
   font-weight: 400;
 }
 
+body {
+  margin: 0 auto;
+}
 /* HEADER */
 
 .header-wrapper {
   position: absolute;
-  top: 0.3rem;
-  margin: 0 calc((100% - 120rem) / 2);
+  margin: 0 calc((100% - 144rem) / 2);
   width: 144rem;
   z-index: 1;
 }
-
 .header-content {
   width: 120rem;
-  padding-top: 1.5rem;
+  margin-left: 12rem;
 }
 
 .header-content,
@@ -43,8 +43,8 @@
 
 .header-navigation {
   width: 55rem;
-  padding-left: 7.4rem;
-  padding-top: 0.5rem;
+  padding-left: 7rem;
+  padding-top: 0.2rem;
 }
 .links {
   list-style-type: none;
@@ -58,14 +58,40 @@
 
 .link-item > a {
   color: var(--text-main-color);
-  text-decoration: none;
 }
-.link-item > img {
+.search-box > img {
   padding-top: 1rem;
   cursor: pointer;
 }
 
-/* LOGO IN HEADER AND IN FOOTER*/
+.txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  color: var(--text-main-color);
+  width: 0px;
+  z-index: 1;
+}
+
+.search-box:hover > .txt {
+  border: 0.2rem solid var(--button-color);
+  border-radius: 0.5rem;
+  width: 12rem;
+  height: 5rem;
+  padding: 0 6px;
+  transition: all 1s;
+}
+.txt::placeholder {
+  font-size: 1.8rem;
+  color: var(--text-main-color);
+}
+
+/* LOGO HEADER/FOOTER*/
 
 .hero {
   display: flex;
@@ -75,11 +101,11 @@
 .logo {
   margin-right: 1.4rem;
 }
+
 .logo-title {
   color: var(--text-main-color);
   text-transform: uppercase;
   font-size: 3.2rem;
-  font-weight: 400;
   font-family: "Roboto", sans-serif;
   line-height: 6rem;
 }
@@ -87,10 +113,19 @@
 h4 {
   color: var(--text-main-color);
   font-size: 2.2rem;
-  font-style: normal;
-  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--button-active);
+}
 .sv:hover {
   fill: #cd6326;
 }
@@ -128,7 +163,7 @@ button {
 
 .survival-text {
   position: absolute;
-  top: 21%;
+  top: 17%;
   left: calc((100% - 120rem) / 2);
 }
 h2 {
@@ -172,13 +207,14 @@ h2 {
   max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 12.5rem;
+  padding-top: 8.6rem;
   text-align: center;
 }
 
 .last-articles-title {
   color: var(--font-dark);
   font-style: normal;
+  margin-bottom: 0;
 }
 .last-article-content {
   font-size: 2.4rem;
@@ -191,7 +227,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 120rem;
-  margin-top: 12.4rem;
+  margin-top: 12.3rem;
 }
 .slide {
   padding-top: 0.2rem;
@@ -209,12 +245,14 @@ h2 {
 }
 .slide-title {
   padding-top: 24.7rem;
+  margin: 0;
 }
 
 .slide-text {
   font-size: 1.7rem;
   padding-top: 1.5rem;
   color: var(--text-main-color);
+  margin: 0;
 }
 .arrow {
   width: 3rem;
@@ -289,7 +327,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14.5rem 0;
+  padding: 14rem 0 14.5rem;
   margin-left: auto;
   margin-right: auto;
 }

@@ -146,6 +146,16 @@ button {
   background-color: transparent;
   border-radius: 0.5rem;
 }
+.signin-button:hover {
+  background-color: var(--button-color);
+  transition: all 1s;
+}
+
+.signin-button:active {
+  background-color: var(--button-active);
+  border: 0.2rem solid var(--button-active);
+  transition: all 1s;
+}
 .survival {
   max-height: 77.9rem;
   background-color: var(--header-survival-background);
@@ -199,6 +209,19 @@ h2 {
   line-height: 2.7rem;
   font-weight: normal;
 }
+
+.donate:hover,
+.button-send:hover {
+  background-color: var(--button-hover);
+  border: 0.1rem solid var(--button-hover);
+}
+
+.donate:active,
+.button-send:active {
+  background-color: var(--button-active);
+  border: 0.1rem solid var(--button-active);
+}
+
 .latest-articles-slider {
   background-color: var(--slider-background);
 }
@@ -260,6 +283,7 @@ h2 {
 }
 .arrows {
   align-self: center;
+  cursor: pointer;
 }
 .get-notified {
   text-align: center;
@@ -358,4 +382,36 @@ h2 {
 
 .social-link-item:not(:last-child) {
   padding-right: 1.8rem;
+}
+.social-links > li {
+  width: 4.1rem;
+  height: 4.1rem;
+  cursor: pointer;
+}
+
+.social-links > li:hover {
+  border: 0.2rem solid var(--text-main-color);
+  transition: all 0.8s;
+  background-color: var(--text-main-color);
+}
+
+.social-links > li:active {
+  border: 0.2rem solid var(--button-active);
+  transition: all 0.8s;
+  background-color: var(--text-main-color);
+}
+.fb {
+  background-image: url("./images/fb.svg");
+}
+
+.ig {
+  background-image: url("./images/ig.svg");
+}
+
+.pin {
+  background-image: url("./images/pin.svg");
+}
+
+.telega {
+  background-image: url("./images/telega.svg");
 }

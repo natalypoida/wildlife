@@ -27,16 +27,6 @@ a {
   text-decoration: none;
 }
 
-a,
-button,
-.search-box > img,
-.arrows,
-.button-send,
-.footer-nav-link,
-.social-links > li {
-  cursor: pointer;
-}
-
 a:hover {
   text-decoration: underline;
 }
@@ -63,6 +53,16 @@ h4 {
 .social-links {
   display: flex;
   justify-content: space-between;
+}
+
+a,
+button,
+.search-box > img,
+.arrows,
+.button-send,
+.footer-nav-link,
+.social-links > li {
+  cursor: pointer;
 }
 
 /*BUTTONS*/
